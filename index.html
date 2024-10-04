@@ -4,41 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Иванов Иван 3 задание</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
         <!-- Шапка сайта -->
-    <header class="header">
-        <img src="image.jpg" alt="Логотип сайта" id="logo">
-        <h1>ЗДЕСЬ МОГЛА БЫТЬ ВАША РЕКЛАМА</h1>
+    <header class="header bg-light text-center py-3">
+        <div class="container">
+            <img src="image.jpg" alt="Логотип сайта" id="logo" class="img-fluid" style="max-width: 150px;">
+            <h1 class="h3">ЗДЕСЬ МОГЛА БЫТЬ ВАША РЕКЛАМА</h1>
+        </div>
     </header>
-<nav class="menu">
-        <ul>
-            <li><a href="#section2">Первая ссылочка</a></li>
-            <li><a href="#section3">Вторая ссылочка</a></li>
-            <li><a href="#section4">Третья ссылочка</a></li>
-        </ul>
+    
+  <nav class="menu bg-dark py-3">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#section2">Ссылка меню 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#section3">Ссылка 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#section4">Ссылка 3</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
     <main class="content">
 
-      <section class="links-section">
+<section class="links-section col-12 order-md-2">
     <h1>ССЫЛОЧКИ</h1>
     <ul>
-        <li><a href="http://kubsu.ru">1. Ссылка на главную страницу kubsu.ru (HTTP)</a></li>
-        <li><a href="https://kubsu.ru">2. Ссылка на главную страницу kubsu.ru (HTTPS)</a></li>
-        <li><a href="https://www.example.com"><img src="pic.jpg" alt="3. Ссылка-изображение" width = "200"></a></li>
-        <li><a href="/about">4. Сокращенная ссылка на внутреннюю страницу</a></li>
-        <li><a href="/">5. Сокращенная ссылка на главную страницу</a></li>
-        <li><a href="#section1">6. Ссылка на фрагмент текущей страницы</a></li>
-        <li><a href="https://youtu.be/d5IMLOR-bRo?si=-VU-9fB2x6fkUmpT">7. Ссылка с тремя параметрами</a></li>
-        <li><a href="https://vk.com/id145294955">8. Ссылка с параметром id</a></li>
-        <li><a href="./page.html">9. Относительная ссылка на страницу в текущем каталоге</a></li>
-        <li><a href="about/page.html">10. Относительная ссылка на страницу в каталоге about</a></li>
-        <li><a href="../page1.html">11. Относительная ссылка на страницу уровнем выше</a></li>
-        <li><a href="../../page2.html">12. Относительная ссылка на страницу двумя уровнями выше</a></li>
-        <li><p>13. Это <a href="https://www.wikipedia.org"> контекстная ссылка</a> в тексте абзаца.</p></li>
-        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82#%D0%A0%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B">14. Ссылка на фрагмент страницы стороннего сайта</a></li>
-        <li>
+        <li class="list-group-item"><a href="http://kubsu.ru">1. Ссылка на главную страницу kubsu.ru (HTTP)</a></li>
+        <li class="list-group-item"><a href="https://kubsu.ru">2. Ссылка на главную страницу kubsu.ru (HTTPS)</a></li>
+        <li class="list-group-item"><a href="https://www.example.com"><img src="pic.jpg" alt="3. Ссылка-изображение" width = "200"></a></li>
+        <li class="list-group-item"><a href="/about">4. Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li class="list-group-item"><a href="/">5. Сокращенная ссылка на главную страницу</a></li>
+        <liclass="list-group-item"><a href="#section1">6. Ссылка на фрагмент текущей страницы</a></li>
+        <li class="list-group-item"><a href="https://youtu.be/d5IMLOR-bRo?si=-VU-9fB2x6fkUmpT">7. Ссылка с тремя параметрами</a></li>
+        <li class="list-group-item"><a href="https://vk.com/id145294955">8. Ссылка с параметром id</a></li>
+        <li class="list-group-item"><a href="./page.html">9. Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li class="list-group-item"><a href="about/page.html">10. Относительная ссылка на страницу в каталоге about</a></li>
+        <li class="list-group-item"><a href="../page1.html">11. Относительная ссылка на страницу уровнем выше</a></li>
+        <li class="list-group-item"><a href="../../page2.html">12. Относительная ссылка на страницу двумя уровнями выше</a></li>
+        <li class="list-group-item"><p>13. Это <a href="https://www.wikipedia.org"> контекстная ссылка</a> в тексте абзаца.</p></li>
+        <li class="list-group-item"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82#%D0%A0%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B">14. Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <li class="list-group-item">
             <img src="pic.jpg" width = "300" usemap="#imagemap" alt="чета">
             <map name="imagemap">
                 <area shape="rect" coords="0,0,50,50" href="https://www.youtube.com" alt="Прямоугольная область">
@@ -46,28 +59,29 @@
             </map>
         </li>
 
-        <li><a href="">16. Ссылка с пустым href</a></li>
+        <li class="list-group-item"><a href="">16. Ссылка с пустым href</a></li>
 
-        <li><a>17. Ссылка без href</a></li>
+        <li class="list-group-item"><a>17. Ссылка без href</a></li>
 
-        <li><a href="https://www.apple.com" rel="nofollow">18. Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li class="list-group-item"><a href="https://www.apple.com" rel="nofollow">18. Ссылка, по которой запрещен переход поисковикам</a></li>
 
-        <li><a href="https://translate.google.com/" rel="noindex">19. Не индексируемая ссылка</a></li>
+        <li class="list-group-item"><a href="https://translate.google.com/" rel="noindex">19. Не индексируемая ссылка</a></li>
         
-        <li>
+        <li class="list-group-item">
             <ol>
                 <li><a href="https://github.com/" title="=)">Первая ссылка</a></li>
                 <li><a href="https://mail.ru/" title="Mail почта">Вторая ссылка</a></li>
             </ol>
         </li>
 
-        <li><a href="ftp://username:password@ftp.example.com/file.txt">21. Ссылка на файл на сервере FTP</a></li>
+        <li class="list-group-item"><a href="ftp://username:password@ftp.example.com/file.txt">21. Ссылка на файл на сервере FTP</a></li>
     </ul>
         </section>
-        <section class = "table-section">
     <!-- Таблица -->
-        <table>
-            <thead>
+ <section class="table-section col-12 order-md-1 mb-5">
+                <h2>Таблица с данными</h2>
+                <table class="table table-bordered table-striped">
+                    <thead class="table-light">
                 <tr>
                     <th>RADDAN</th>
                     <th>Ame</th>
