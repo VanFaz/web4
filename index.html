@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-     
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet"
@@ -14,35 +14,35 @@
     <title>Иванов Иван 4 задание</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-        <!-- Шапка сайта -->
-    <header class="header bg-light text-center py-3">
-        <div class="container">
+<body class="d-flex flex-column align-items-center">
+    <header class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 justify-content-center justify-content-md-between">
+            <div class="header-case m-0 ms-md-1 col-md-auto d-flex align-items-center justify-content-center m-3">
             <img src="image.jpg" alt="Логотип сайта" id="logo" class="img-fluid" style="max-width: 150px;">
-            <h1 class="h3">ЗДЕСЬ МОГЛА БЫТЬ ВАША РЕКЛАМА</h1>
+            <h1 class="h3">WINTER ARC</h1>
         </div>
-    </header>
+        </div>
+        <nav class="menu bg-dark py-3">
+            <div class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#section2">Ссылочка 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#section3">Ссылочка 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#section4">Ссылочка 3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     
-  <nav class="menu bg-dark py-3">
-        <div class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#section2">Ссылочка 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#section3">Ссылочка 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#section4">Ссылочка 3</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+</header>
 
-    <main class="content">
-
-<section class="links-section col-12 order-2 order-md-1">
     <h1>ССЫЛОЧКИ</h1>
+    <div class="content d-flex flex-column">
+        <div class="hiper m-2 p-2 m-md-3" id="hiper">
     <ul>
         <li class="list-group-item"><a href="http://kubsu.ru">1. Ссылка на главную страницу kubsu.ru (HTTP)</a></li>
         <li class="list-group-item"><a href="https://kubsu.ru">2. Ссылка на главную страницу kubsu.ru (HTTPS)</a></li>
@@ -83,9 +83,9 @@
 
         <li class="list-group-item"><a href="ftp://username:password@ftp.example.com/file.txt">21. Ссылка на файл на сервере FTP</a></li>
     </ul>
-        </section>
+
     <!-- Таблица -->
-            <section class="table-section col-12 order-1 order-md-2 mb-5">
+    <div class="tabl m-2 p-2 m-md-3" id="tabl">
                 <h2>Таблица с данными</h2>
                 <table class="table table-bordered table-striped">
                     <thead class="table-light">
@@ -134,14 +134,14 @@
                 </tr>
             </tbody>
         </table>
-</div>
-        </section>
-        <div id ="section3">
+    </div>
+
     <!-- Форма с полями -->
-            <section class="links-section col-12 order-2 order-md-1">
             <div id ="section2">
+                <div class="forma m-2 p-2 m-md-3" id="forma">
+
      <h1>ФОРМА HTML</h1>
-    <form action="submit_form.php" method="post">
+     <form action="/" method="POST">
         <label for="name">ФИО:</label>
         <input type="text" id="name" name="name" placeholder="Иванов Иван Александрович" required><br><br>
 
@@ -184,9 +184,8 @@
         <input type="submit" value="Сохранить">
         </form>
     </div>
-</main>
     <div id ="section4">
-    <footer class="footer bg-light text-center py-3">
+        <footer class="page-footer p-3 mt-3">
         <div class="container">
         <p>(c) Иван Иванов 2024</p>
     </footer>
