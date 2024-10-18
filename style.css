@@ -36,7 +36,7 @@ div.hiper, div.forma, div.tabl {
 }
 
 div.hiper {
-    border: 10px groove rgb(0, 112, 45);
+    border: 10px groove black;
     order:1;
 }
 
